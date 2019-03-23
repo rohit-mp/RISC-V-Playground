@@ -23,3 +23,17 @@ Finally, build using the command
 ```
 CC=gcc-5 CXX=g++-5 ./build.sh
 ```
+
+## How to run
+
+You can run the RISC-V code by 
+```
+riscv64-unknown-elf-gcc program.s -o program
+spike pk program
+```
+
+To run in debug mode, run the command
+```
+riscv64-unknown-elf-gcc program.s -o program
+spike -d pk program
+```
